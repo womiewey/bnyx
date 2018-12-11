@@ -1,1 +1,39 @@
-<ion-nav [root]="rootPage"></ion-nav>
+
+<head> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<!-- Gibberish code for menu-->
+<ion-menu [content]="content" swipeEnabled="false">
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>Menu</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <head> 
+            <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+        </head>
+    
+        <ion-content class="background">
+                
+                <div class = "name">
+                    <h3> <strong> Jonathan Taylar </strong> </h3>
+                    <p id ="department"> Computer Engineering <br> Department </p>
+                </div>
+                <div class = "buttons">
+                <ion-list>
+                    <ion-item style="background-color: rgba(0,0,255,0.15)">
+                        Options
+                    </ion-item>
+                    <button menuClose ion-item (click)="showConfirm()">
+                        Log out
+                    </button>
+                </ion-list>
+            </div>
+        </ion-content>
+    
+    
+    </ion-menu>
+    
+    <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav> <!-- disable swipe -->

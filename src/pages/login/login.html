@@ -1,0 +1,21 @@
+<ion-content fullscreen class = "bgcolor">
+  <div class = "icon">
+    <img src = "../../assets/imgs/bio_1.png" alt="bionyxlogo"/>
+  </div>
+  <ion-list inset class = "inputs">
+    <ion-item no-lines class = "inputs">
+      <ion-label color = "light" floating id = "roboto"> Username </ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item no-lines class = "inputs" id = "roboto" >
+        <ion-label color = "light" floating > Password</ion-label>
+        <ion-input type="password"></ion-input>
+    </ion-item>
+    <button ion-button block round color ="light" class = "button" id = "montserrat" (click) = "login()">
+        <b> LOG IN </b>
+    </button>
+    <p id ="Roboto" (click) = "register()"> No account yet? Register here </p>
+  </ion-list>
+</ion-content>
+
+

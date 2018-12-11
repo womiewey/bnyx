@@ -14,3 +14,29 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.bgcolor{
+    background-color: #296DAA;
+}
+#roboto{
+    font-family: 'Roboto', sans-serif;
+}
+#montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+#logo{
+    height: 40px;
+}
+ion-navbar.toolbar-md {
+    min-height: 70px!important;
+  }
+.toolbar-background {
+    background-color: #296DAA;
+}
+ion-icon{
+    color:white;
+    zoom: 1.5;
+    margin-left:5px;
+}
+.backgroundfade{
+    background-color:rgba(41, 109, 170, 0.25);
+}

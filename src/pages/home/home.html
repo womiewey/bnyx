@@ -1,14 +1,44 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
+    <ion-buttons left>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title id="logohead">
+      <img id = "logo" src = "../../assets/imgs/bio_2.png" alt= "Bionyx" />
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding class = "backgroundfade">
+  <h2 id = "montserrat" class = "menulbl"> <strong> MENU </strong> </h2>
+  <ion-grid>
+      <ion-row>
+        <ion-col style="text-align: center;">
+            <ion-card (click) = "assess()">
+                <p> ASSESS FINGERNAIL </p>
+            </ion-card>
+    
+        </ion-col>
+        <ion-col style="text-align: center;">
+            <ion-card>
+                <p> DISORDERS </p>
+              </ion-card>
+        </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col style="text-align: center;">
+                <ion-card>
+                    <p> PRESCRIPTION </p>
+                  </ion-card>
+        
+            </ion-col>
+            <ion-col style="text-align: center;">
+                <ion-card>
+                    <p> HISTORY </p>
+                  </ion-card>
+            </ion-col>
+            </ion-row>
+    </ion-grid>
 </ion-content>
